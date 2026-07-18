@@ -61,6 +61,17 @@ Each question is tagged:
 
 Contributions are very welcome — this field moves fast and no single person covers all of it. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines on adding questions, improving answers, or fixing errors. 🚀
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Neural-Interface-Protocol-Designer-Interview-Questions&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
 ## 📄 License
 
 Content licensed under [CC BY-SA 4.0](LICENSE) — free to use and adapt, with attribution, sharing improvements back under the same license. ⚖️
