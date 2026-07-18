@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Glowing Blue/Cyan Gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Glowing Purple/Magenta Gradient -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1" opacity="0.3"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComponentTransfer in="blur" result="boost">
+        <feFuncA type="linear" slope="1.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="boost" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Abstract Brain / Neural Net Graphic (Right Side) -->
+  <g transform="translate(850, 200)">
+    <!-- Central Brain/Hub Glow -->
+    <circle r="90" fill="#8b5cf6" opacity="0.15" filter="url(#heavyGlow)">
+      <animate attributeName="r" values="80;105;80" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle r="50" fill="#06b6d4" opacity="0.2" filter="url(#heavyGlow)">
+      <animate attributeName="r" values="45;60;45" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Connections / Neural Pathways -->
+    <!-- Pathway 1 -->
+    <path d="M -120,-100 Q -60,-120 0,-60 T 120,60" fill="none" stroke="url(#cyanGrad)" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0,500;500,0;0,500" dur="6s" repeatCount="indefinite" />
+    </path>
+    <!-- Pathway 2 -->
+    <path d="M -150,20 Q -80,-50 0,0 T 150,-20" fill="none" stroke="url(#purpleGrad)" stroke-width="2.5" opacity="0.5">
+      <animate attributeName="stroke-dasharray" values="500,0;0,500;500,0" dur="8s" repeatCount="indefinite" />
+    </path>
+    <!-- Pathway 3 -->
+    <path d="M -90,120 Q -30,60 0,60 T 90,-120" fill="none" stroke="#3b82f6" stroke-dasharray="8 4" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Nodes (Neural Nodes) -->
+    <!-- Node A -->
+    <g transform="translate(-120, -100)">
+      <circle r="8" fill="#d946ef" filter="url(#glow)" />
+      <circle r="14" fill="none" stroke="#d946ef" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="6;18;6" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- Node B -->
+    <g transform="translate(-60, -120)">
+      <circle r="5" fill="#06b6d4" />
+    </g>
+    <!-- Node C -->
+    <g transform="translate(0, -60)">
+      <circle r="10" fill="#3b82f6" filter="url(#glow)">
+        <animate attributeName="r" values="8;11;8" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- Node D -->
+    <g transform="translate(120, 60)">
+      <circle r="7" fill="#06b6d4" filter="url(#glow)" />
+      <circle r="12" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.6">
+        <animate attributeName="r" values="7;15;7" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- Center Node -->
+    <g transform="translate(0, 0)">
+      <circle r="15" fill="url(#purpleGrad)" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle r="22" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4">
+        <animate attributeName="r" values="15;30;15" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- Additional Node -->
+    <g transform="translate(150, -20)">
+      <circle r="6" fill="#8b5cf6" />
+    </g>
+    <!-- Additional Node 2 -->
+    <g transform="translate(-150, 20)">
+      <circle r="9" fill="#06b6d4" filter="url(#glow)">
+        <animate attributeName="fill" values="#06b6d4;#d946ef;#06b6d4" dur="4s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+
+  <!-- Left Side: Text and Title -->
+  <g transform="translate(80, 0)">
+    <!-- Decorative Neural Signal Wave (Bottom/Under Title) -->
+    <path d="M 0,270 Q 150,220 300,270 T 600,270" fill="none" stroke="url(#cyanGrad)" stroke-width="3" opacity="0.3" filter="url(#glow)">
+      <animate attributeName="d" 
+               values="M 0,270 Q 150,220 300,270 T 600,270;
+                       M 0,270 Q 150,320 300,270 T 600,270;
+                       M 0,270 Q 150,220 300,270 T 600,270" 
+               dur="5s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Category Badges / Tags -->
+    <g transform="translate(0, 110)">
+      <rect width="180" height="24" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="90" y="16" fill="#06b6d4" font-family="'Outfit', 'Inter', sans-serif" font-weight="bold" font-size="10" letter-spacing="1.5" text-anchor="middle">BRAIN-COMPUTER INTERFACE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="180" fill="#ffffff" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-weight="800" font-size="44" letter-spacing="-0.5">
+      Neural Interface Protocol
+    </text>
+    <text x="0" y="235" fill="url(#purpleGrad)" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-weight="800" font-size="44" letter-spacing="-0.5" filter="url(#glow)">
+      Designer Interview Prep
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="285" fill="#94a3b8" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="16" letter-spacing="0.5">
+      A curated, open-source guide for neural telemetric, signal, &amp; safety layers.
+    </text>
+
+    <!-- Quick Stats Indicator / Interface Elements -->
+    <g transform="translate(0, 320)">
+      <!-- Decode Signal Bar -->
+      <text x="0" y="15" fill="#64748b" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" letter-spacing="1">DECODING STABILITY</text>
+      <rect x="145" y="6" width="120" height="8" rx="4" fill="#1e293b"/>
+      <rect x="145" y="6" width="98" height="8" rx="4" fill="#06b6d4">
+        <animate attributeName="width" values="80;110;95;115;80" dur="4s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Battery / Power Telemetry -->
+      <text x="300" y="15" fill="#64748b" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" letter-spacing="1">INDUCTIVE LINK</text>
+      <text x="415" y="15" fill="#d946ef" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" letter-spacing="1">98.4%
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+      </text>
+    </g>
+  </g>
+</svg>
