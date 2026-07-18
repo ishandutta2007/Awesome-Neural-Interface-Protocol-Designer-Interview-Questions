@@ -2,9 +2,20 @@
   <img src="assets/banner.svg" alt="Neural Interface Protocol Designer Banner" width="100%"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg?style=flat-square" alt="License"/></a>
+</p>
+
 # 🧠 Neural Interface Protocol Designer — Interview Questions ⚡
 
+> 🔍 **Keywords:** Neural Interface, Protocol Designer, Brain-Computer Interface (BCI), Neural Telemetry, Signal Processing, Neural Implant, Medical Device Safety, Neurotechnology Interview Prep.
+
 A curated, open-source collection of interview questions (with answers) for **Neural Interface Protocol Designer** roles — the engineers who design the communication, signal, and safety layers between the brain (or peripheral nervous system) and external hardware/software in brain-computer interface (BCI) and neural implant systems. 🔌
+
 
 This role sits at the intersection of **neuroscience, embedded systems, wireless/wired protocol design, signal processing, and medical device safety**. The questions here reflect that breadth — from "how do you decode a motor cortex spike train" to "how do you design a fail-safe telemetry link for an implanted device." 🛰️
 
