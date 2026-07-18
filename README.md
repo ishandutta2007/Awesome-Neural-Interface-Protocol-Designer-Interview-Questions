@@ -8,6 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions?style=flat-square" alt="Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Neural-Interface-Protocol-Designer-Interview-Questions?style=flat-square" alt="PRs Welcome"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 # 🧠 Neural Interface Protocol Designer — Interview Questions ⚡
